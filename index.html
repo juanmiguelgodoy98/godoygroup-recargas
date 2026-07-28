@@ -32,15 +32,16 @@
       </ul>
       </div>
 
-      <form action="https:wa.me/5356691445" method="get" target="_blank">
+      
 
        
-
+      
         <!-- 1. Nùmero de Telèfono -->
+         <form>
         <label for="numero-telefono" style="font-size: 18px; font-weight: bold; color: #333;">Nùmero a Recargar:</label>
 
         <input type="tel"
-               id="numero-telefono"
+               id="telefono"
                placeholder="Ej: 5xxxxxxx o 6xxxxxxx"
                pattern="(\+?53)?[56][0-9]{7}$"
                title="Debe ser un nùmero mòvil vàlido de Cuba (8 digitos emezando por 5 o 6, opcionalmente con +53)"
@@ -55,7 +56,7 @@
         <br><br>
 
 
-        <button type="submit" style="width: 100%; background: #28a745; color: #fff; border: none; padding: 12px; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer; margin-bottom: 15px;">Enviar Recarga</button>
+      
       
 
       
@@ -101,19 +102,32 @@
          </div> 
          </div>
         <br><br>
-     
-
       
         
       
 
-      
+       
         <!-- 4. Aviso sobre la Captura y Botòn de Envio-->
          <p style="font-size: 14px; color: gray;">* Al enviar, se abrirà WhatsApp para que envìes tu Captura de Pantalla de la Transferencia</p>
         <p style="font-size: 14px; color: gray;">* Si quieres recargar  y no tienes megas para acceder a la web o cuando no tengas internet puedes llamar(puede ser por *99) o enviar un mensaje al 56691445 y se te atenderà</p>
-        <input type="submit" value="Enviar Solicitud De Recarga por WhatsApp">
+        
+
+
+<button type="button" onclick="
+    let tel = document.getElementById('telefono').value.trim();
+    let of = document.getElementById('oferta').value;
+    let cant = document.getElementById('cantidad').value;
+    if(!tel) { alert('Introduce tu número de teléfono'); return; }
+    let msg = 'Hola, quiero solicitar una recarga:%0A- Oferta: ' + of + '%0A- Cantidad: ' + cant + '%0A- Teléfono: ' + tel;
+    window.open('https://wa.me/5356691445?text=' + msg, '_blank');
+" style="width: 100%; background: #28a745; color: #fff; padding: 12px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; margin-top: 10px;">
+    Enviar Solicitud De Recarga por WhatsApp
+</button>
+       
       
+        </form>
 
       <script src="script.js"></script>
+      
    </body>
-
+</html>
