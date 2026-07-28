@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recargas Saldo Mòvil Cuba</title>
+    <!-- Conectamos el archivo CSS moderno-->
+     <link rel="stylesheet" href="style.css">
+  </head>
+   <body>
+
+
+
+    <div class="fondo animado">
+      <div class="icono-flotante">📱</div>
+      <div class="icono-flotante">💬</div>
+      <div class="icono-flotante">💸</div>
+      <div class="icono-flotante">📶</div>
+      <div class="icono-flotante">⚡</div>
+      <div class="icono-flotante">♻️</div>
+      <div class="icono-flotante">📞</div>
+    </div>
+
+    <h1>Recargas Saldo Mòvil Cuba</h1>
+     <!-- Caja de Ofertas Estlio ETECSA -->
+      <div class="ofertas-destacadas">
+        <h3>OFERTAS DE SALDO MÒVIL</h3>
+     <ul>
+      <li><strong>120</strong> De Saldo Mòvil <strong>450 CUP</strong> </li>
+      <li><strong>240</strong> De Saldo Mòvil <strong>900 CUP</strong></li>
+      <li><strong>360</strong> De Saldo Mòvil <strong>1300 CUP</strong></li>
+      </ul>
+      </div>
+
+      <form action="https:wa.me/5356691445" method="get" target="_blank">
+
+       <div class="logo-marca">
+         <span class="texto-principal">GodoyGroup</span>
+         <span class="texto-secundario">Recargas</span>
+       </div>  
+      
+
+        <!-- 1. Nùmero de Telèfono -->
+        <label for="numero-telefono" style="font-size: 18px; font-weight: bold; color: #333;">Nùmero a Recargar:</label>
+
+        <input type="tel"
+               id="numero-telefono"
+               placeholder="Ej: 5xxxxxxx o 6xxxxxxx"
+               pattern="(\+?53)?[56][0-9]{7}$"
+               title="Debe ser un nùmero mòvil vàlido de Cuba (8 digitos emezando por 5 o 6, opcionalmente con +53)"
+              required
+              style="font-size: 16px; padding: 10px; width: 100%; box-sizing: border-box; margin-top: 5px;">
+
+              <!-- Mensaje de error personalizado que aparecerà si est mal -->
+               <span id="error-telefono" style="color: #d9534f; font-size: 13px; font-weight: bold; display: none; margin-top: 5px;">
+                Nùmero Incorrecto, Rectifique Por Favor
+               </span>
+
+        <br><br>
+
+
+        <button type="submit" style="width: 100%; background: #28a745; color: #fff; border: none; padding: 12px; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer; margin-bottom: 15px;">Comprobar Nùmero</button>
+      
+
+      
+        <!-- 2. Oferta-->
+        <label>Elige tu Oferta De Saldo</label>
+        <select id="oferta">
+          <option value="450">120</option>
+          <option value="900">240</option>
+          <option value="1300">360</option>
+        </select>
+        <br><br>
+
+        <!-- Cantidad de Recargas-->
+         <label>Cantidad:</label>
+         <input type="number" id="cantidad" value="1" min="1">
+         <!-- Letrero del Totoal a Pagar-->
+         <p>Total a Pagar: <span id="precio-total">0</span> CUP</p>
+         <br><br>
+
+      
+        <!-- 3. Mètodo de Pago-->
+         <div style="background: #ffffff; padding: 15px; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        <label style="display: block; font-size: 16px; font-weight: bold; color: #333; margin-bottom: 5px;">Elige El Mètodo de Pago:</label>
+        <select id="metodo-pago" name="metodo-pago" style="font-size: 16px; padding: 10px; width: 100%; border: 1px solid #ced4da; border-radius: 6px; box-sizing: border-box; background-color: #fff;">
+          <option value="transfermovil">Transfermòvil</option>
+          <option value="enzona">EnZona</option>
+        </select>
+
+        <!-- Informacion de pago que aparecera segun la opcion elegida -->
+         <div id="info-pago" style="display: block; background: #f1f3f5; padding: 12px; border-radius: 8px; margin-bottom: 15px; border-left: 4px solid #0056b3;">
+          <p style="margin: 0 0 5px 0; font-size: 14px; color: #495057; font-weight: bold;" id="texto-metodo">Datos para Transferir:</p>
+         <div style="display: flex; align-items: center; justify-content: space-between; background: #fff; padding: 8px 12px; border: 1px solid #ced4da; border-radius: 6px; margin-bottom: 8px;">
+          <span id="numero-a-copiar" style="font-family: monospace; font-size: 16px; font-weight: bold; color: #212529;">9212 0699 9115 8296</span>  
+          <button type="button" id="btn-copiar" style="background: #007bff; color: #fff; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 13px;">Copiar</button>
+         </div>
+         
+         <!-- Linea fija agregada con tu numero a confirmar -->
+          <div style="font-size: 14px; color: #333; font-weight: bold; background: #e9ecef; padding: 8px; border-radius: 4px;">
+            Nùmero a Confirmar: <span style="font-family: monospace; color: #0056b3;">56691445</span>
+          </div>
+
+         <small id="aviso-copiado" style="color: #28a745; display: none; margin-top: 5px; font-weight: bold;">¡Copiado al Portapapeles!</small>
+         </div> 
+         </div>
+        <br><br>
+     </form>
+
+      
+        
+      
+
+      
+        <!-- 4. Aviso sobre la Captura y Botòn de Envio-->
+         <p style="font-size: 14px; color: gray;">* Al enviar, se abrirà WhatsApp para que envìes tu Captura de Pantalla de la Transferencia</p>
+        <p style="font-size: 14px; color: gray;">* Si quieres recargar  y no tienes megas para acceder a la web o cuando no tengas internet puedes llamar(puede ser por *99) o enviar un mensaje al 56691445 y se te atenderà</p>
+        <input type="submit" value="Enviar Solicitud De Recarga por WhatsApp">
+      </form>
+
+      <script src="script.js"></script>
+   </body>
+
