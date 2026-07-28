@@ -234,26 +234,3 @@ input[type="submit"]:hover {
 .icono-flotante:nth-child(6) { left: 80%; animation-delay: 3s; animation-duration: 13s; }
 .icono-flotante:nth-child(7) { left: 92%; animation-delay: 6s; animation-duration: 15s; }
 
-/* Posiciona todo el bloque a la esquina superiro derecha */
-.logo-marca {
-    position: absolute;
-    top: 15px;
-    left: 20px;
-    text-align: left; /* Alinea los textos a la derecha */
-}
-
-/* Estilo para GodoyGroup */
-.texto-principal {
-    display: block;
-    font-size: 2rem;
-    font-weight: bold;
-    color: greenyellow; /* Cambia este color por el que prefieras */
-}
-
-/* Estilo para Recargas */
-.texto-secundario {
-    display: block;
-    font-size: 1.7rem;
-    color: white; /* Cambia este color por el que prefieras */
-    margin-left: 45px;
-} 
