@@ -78,4 +78,6 @@ if (btnCopiar) {
     });
 }
 
-
+function cerrarAnuncio(){
+    document.getElementById("anuncio").style.display ="none"
+}
