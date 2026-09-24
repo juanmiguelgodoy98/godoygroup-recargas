@@ -28,10 +28,6 @@ Sitio web para la venta de recargas de saldo móvil en Cuba, con cálculo autom�
 - Validación de formularios en el cliente
 - Despliegue y configuración de GitHub Pages
 
-## 📸 Capturas de pantalla
-
-_(agrega 1-2 imágenes del sitio funcionando)_
-
 ## 👤 Autor
 
 **Juan Miguel Godoy**
