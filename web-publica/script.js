@@ -1,4 +1,3 @@
-// Buscamos los elementos por sus id
 const selectOfertas = document.getElementById("oferta");
 const inputCantidad = document.getElementById("cantidad");
 const spanTotal = document.getElementById("precio-total");
@@ -81,4 +80,3 @@ if (btnCopiar) {
 function cerrarAnuncio(){
     document.getElementById("anuncio").style.display ="none"
 }
-
